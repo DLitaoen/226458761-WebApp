@@ -1,11 +1,9 @@
-Errors and Warnings:
+html_exercise_01.html:
     1. Error: Bad value "350px" for attribute 'height' on element 'img': Expected a digit but saw "p" instead.
+        Solution: Remove "px" from value of 'height' element.
     2. Error: Attribute "required" not allowed on element 'label' at this point.
+        Solution: Remove 'required' attribute on element 'label'.
     3. Error: Bad value "350px" for attribute 'height' on element 'video': Expected a digit but saw "p" instead.
+        Solution: Remove "px" from value of 'height' element.
     4. Warning: Section lacks heading. Consider using 'h2' - 'h6' elements to add identifying headings to all sections, or else use a 'div' element instead for any cases where no heading is needed.
-
-Solution:
-    1. Use 'style' attribute to set the height of the 'img' element instead of using 'height' attribute.
-    2. Remove 'required' attribute on element 'label'.
-    3. Use 'style' attribute to set the height of the 'video' element instead of using 'height' attribute.
-    4. Add or move heading element ('h2' - 'h6') inside the 'section' element.
+        Solution: Add or move heading element ('h2' - 'h6') inside the 'section' element.
