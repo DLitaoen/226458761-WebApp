@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>HTML Exercises</title>
+</head>
+<body>
+    <header>
+        <h1>HTML Exercises</h1>
+        <p>by Alby Destiny Litaoen</p>
+    </header>
+    <br>
+
+    <!-- Links -->
+    <section id="Links">
+        <h2>Links</h2>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </section>
+
+    <!-- Images -->
+    <section id="Images">
+        <h2>Images</h2>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Development Setup">
+            <figcaption>Photo by <a href="https://unsplash.com/@ffstop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Fotis Fotopoulos</a> on <a href="https://unsplash.com/photos/black-computer-keyboard-DuHKoV44prg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+            </figcaption>
+        </figure>
+        <hr>
+    </section>
+
+    <!-- Forms -->
+    <section id="Forms">
+        <h2>Forms</h2>
+        <form>
+            <label for="username-input">Username:</label><br>
+            <input type="text" id="username-input" name="username-input" required>
+            <br>
+            <label for="userpass-input">Password:</label><br>
+            <input type="password" id="userpass-input" name="userpass-input" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <br>
+            <p>Gender:</p>
+            <input type="radio" id="gender-input-male" name="gender-input" required>
+            <label for="gender-input-male">Male</label>
+            <input type="radio" id="gender-input-female" name="gender-input" required>
+            <label for="gender-input-female">Female</label>
+            <br><br>
+            <input type="checkbox" id="terms-conditions-input" name="terms-conditions-input" required>
+            <label for="terms-conditions-input">I accept the Terms and Conditions.</label>
+            <br><br>
+            <button type="submit">Submit</button>
+        </form>
+        <br><hr>
+    </section>
+
+    <!-- Tables -->
+    <section id="Tables">
+        <h2>Tables</h2>
+        <table>
+            <colgroup>
+                <col span="1">
+                <col>
+                <col>
+            </colgroup>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>New York</td>
+                </tr>
+                <tr>
+                    <td>Jane</td>
+                    <td>30</td>
+                    <td>Los Angeles</td>
+                </tr>
+            </tbody>
+        </table>
+        <br><hr><br>
+    </section>
+
+    <!-- Audio and Video -->
+    <section id="Audio-and-Video">
+        <h2>Audio and Video</h2>
+        <audio src="/html_exercises_01/html_exercise_01-audio.mp3" controls></audio>
+        <br><br>
+        <video src="/html_exercises_01/html_exercises_01-video.mp4" controls></video>
+        <br><hr>
+    </section>
+    <footer>
+        <p>Disclaimer: This was made for an academic course.</p>
+    </footer>
+</body>
+</html>  
