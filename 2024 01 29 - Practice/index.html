@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/2024 01 29 - Practice/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -13,7 +14,7 @@
         <h1>HTML Exercises</h1>
         <p>by Alby Destiny Litaoen</p>
     </header>
-    <br>
+    <br><hr>
 
     <!-- Links -->
     <section id="Links">
@@ -43,20 +44,20 @@
     <section id="Forms">
         <h2>Forms</h2>
         <form>
-            <label for="username-input">Username:</label><br>
+            <label for="username-input" id="text-username">Username:</label><br>
             <input type="text" id="username-input" name="username-input" required>
             <br>
-            <label for="userpass-input">Password:</label><br>
-            <input type="password" id="userpass-input" name="userpass-input" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <label for="password-input" id="text-password">Password:</label><br>
+            <input type="password" id="password-input" name="password-input" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
             <br>
-            <p>Gender:</p>
+            <p id="text-gender">Gender:</p>
             <input type="radio" id="gender-input-male" name="gender-input" required>
             <label for="gender-input-male">Male</label>
             <input type="radio" id="gender-input-female" name="gender-input" required>
             <label for="gender-input-female">Female</label>
             <br><br>
             <input type="checkbox" id="terms-conditions-input" name="terms-conditions-input" required>
-            <label for="terms-conditions-input">I accept the Terms and Conditions.</label>
+            <label for="terms-conditions-input" id="text-terms-conditions">I accept the Terms and Conditions.</label>
             <br><br>
             <button type="submit">Submit</button>
         </form>
@@ -104,7 +105,7 @@
         <br><hr>
     </section>
     <footer>
-        <p>Disclaimer: This was made for an academic course.</p>
+        <p><i>Disclaimer: This was made for an academic course.</i></p>
     </footer>
 </body>
 </html>  
