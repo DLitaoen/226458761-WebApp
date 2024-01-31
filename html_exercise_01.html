@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./html_exercises_01/styles.css">
     <title>HTML Exercises</title>
 </head>
-<body style="font-family: 'Poppins', sans serif; background-color: rgb(21, 21, 21); color: azure; max-width: 800px; margin: 0 auto;">
+<body>
     <header>
         <h1>HTML Exercises</h1>
         <p>by Alby Destiny Litaoen</p>
@@ -21,9 +21,9 @@
         <h2>Links</h2>
         <nav id="navbar">
             <ul>
-                <li><a href="#" style="color: azure;">Home</a></li>
-                <li><a href="#" style="color: azure;">About Us</a></li>
-                <li><a href="#" style="color: azure;">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav>
         <hr>
@@ -33,8 +33,8 @@
     <section id="Images">
         <h2>Images</h2>
         <figure>
-            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Development Setup" style="height:350px;">
-            <figcaption>Photo by <a href="https://unsplash.com/@ffstop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" style="color: azure;">Fotis Fotopoulos</a> on <a href="https://unsplash.com/photos/black-computer-keyboard-DuHKoV44prg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" style="color: azure;">Unsplash</a>
+            <img src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Web Development Setup">
+            <figcaption>Photo by <a href="https://unsplash.com/@ffstop?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Fotis Fotopoulos</a> on <a href="https://unsplash.com/photos/black-computer-keyboard-DuHKoV44prg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
             </figcaption>
         </figure>
         <hr>
@@ -47,10 +47,10 @@
             <label for="username-input">Username:</label><br>
             <input type="text" id="username-input" name="username-input" required>
             <br>
-            <label for="userpass-input">Password:</label><br>
-            <input type="password" id="userpass-input" name="userpass-input" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+            <label for="password-input">Password:</label><br>
+            <input type="password" id="password-input" name="password-input" minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required>
             <br>
-            <p style="line-height: 0px;">Gender:</p>
+            <p id="text-gender">Gender:</p>
             <input type="radio" id="gender-input-male" name="gender-input" required>
             <label for="gender-input-male">Male</label>
             <input type="radio" id="gender-input-female" name="gender-input" required>
@@ -59,7 +59,7 @@
             <input type="checkbox" id="terms-conditions-input" name="terms-conditions-input" required>
             <label for="terms-conditions-input">I accept the Terms and Conditions.</label>
             <br><br>
-            <button type="submit" style="font-family: 'Poppins', sans serif; font-size: 16px;">Submit</button>
+            <button type="submit">Submit</button>
         </form>
         <br><hr>
     </section>
@@ -69,27 +69,27 @@
         <h2>Tables</h2>
         <table>
             <colgroup>
-                <col span="1" style="width: 75px;">
-                <col style="width: 75px;">
-                <col style="width: 125px;">
+                <col span="1">
+                <col>
+                <col>
             </colgroup>
             <thead>
                 <tr>
-                    <th style="border-right: 1px solid azure; border-bottom: 1px solid azure; border-left: 1px solid azure;">Name</th>
-                    <th style="border-right: 1px solid azure; border-bottom: 1px solid azure;">Age</th>
-                    <th style="border-right: 1px solid azure; border-bottom: 1px solid azure;">City</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>City</th>
                 </tr>
             </thead>
             <tbody>
-                <tr style="border-right: 1px solid azure;">
-                    <td style="border-right: 1px solid azure; border-left: 1px solid azure;">John</td>
-                    <td style="border-right: 1px solid azure;">25</td>
-                    <td style="border-right: 1px solid azure;">New York</td>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>New York</td>
                 </tr>
-                <tr style="border-bottom: 1px solid azure;">
-                    <td style="border-right: 1px solid azure; border-left: 1px solid azure;">Jane</td>
-                    <td style="border-right: 1px solid azure;">30</td>
-                    <td style="border-right: 1px solid azure;">Los Angeles</td>
+                <tr>
+                    <td>Jane</td>
+                    <td>30</td>
+                    <td>Los Angeles</td>
                 </tr>
             </tbody>
         </table>
@@ -101,7 +101,7 @@
         <h2>Audio and Video</h2>
         <audio src="/html_exercises_01/html_exercise_01-audio.mp3" controls></audio>
         <br><br>
-        <video src="/html_exercises_01/html_exercises_01-video.mp4" style="height:350px;" controls></video>
+        <video src="/html_exercises_01/html_exercises_01-video.mp4" controls></video>
         <br><hr>
     </section>
     <footer>
