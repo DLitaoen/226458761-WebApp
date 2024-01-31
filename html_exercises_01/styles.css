@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(21, 21, 21);
+    font-family: 'Poppins', sans-serif;
+    color: azure;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: -10px;
+}
+
+/* Links */
+
+ul > li {
+    list-style-type: none;
+}
+
+a:link, a:visited {
+    color: azure;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Images */
+
+img {
+    height: 350px;
+    width: auto;
+}
+
+/* Forms */
+
+form {
+    margin-left: 40px;
+}
+
+input {
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+}
+
+#username-input {
+    margin-bottom: 15px;
+    margin-left: -1px;
+}
+
+#text-gender {
+    margin-bottom: -2px;
+}
+
+button {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    border-radius: 5px;
+    width: 80px;
+}
+
+button:hover {
+    background-color: rgb(187, 187, 187);
+    transition: 0.2s;
+}
+
+/* Tables */
+
+table {
+    border-collapse: collapse;
+    margin-left: 40px;
+}
+
+colgroup {
+    width: 125px;
+}
+
+th, td {
+    border: 1px solid azure;
+}
