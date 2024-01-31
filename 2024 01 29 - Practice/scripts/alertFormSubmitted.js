@@ -1,3 +1,3 @@
 document.getElementById('button-submit').onclick = function() {
-    alert('Form submitted!');
+    alert('Form successfully submitted. Thank you!');
 }
