@@ -50,6 +50,15 @@ figure {
     margin-bottom: 30px;
 }
 
+#Images > figure > figcaption > a:link, a:visited {
+    color: azure;
+    text-decoration: none;
+}
+
+#Images > figure > figcaption > a:hover {
+    text-decoration: underline;
+}
+
 /* Forms */
 
 form {
