@@ -1,3 +1,7 @@
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: rgb(21, 21, 21);
     font-family: 'Poppins', sans-serif;
@@ -11,7 +15,6 @@ h1 {
 }
 
 /* Nav */
-
 nav {
     color: azure;
 }
@@ -30,7 +33,6 @@ nav > ul > li > a:hover {
 }
 
 /* Links */
-
 #Links > ul > li > a:link, a:visited {
     color: azure;
 }
@@ -40,7 +42,6 @@ nav > ul > li > a:hover {
 }
 
 /* Images */
-
 img {
     height: 350px;
     width: auto;
@@ -60,7 +61,6 @@ figure {
 }
 
 /* Forms */
-
 form {
     margin-left: 40px;
 }
@@ -70,7 +70,7 @@ input {
     border-radius: 5px;
 }
 
-#username-input {
+#email-input, #username-input {
     margin-bottom: 15px;
     margin-left: -1px;
 }
@@ -92,7 +92,6 @@ button:hover {
 }
 
 /* Tables */
-
 table {
     border-collapse: collapse;
     margin-left: 40px;
@@ -111,7 +110,6 @@ td {
 }
 
 /* Audio and Video */
-
 audio, video {
     margin-left: 40px;
 }
@@ -122,6 +120,17 @@ video {
     margin-bottom: 30px;
 }
 
+/* Iframes */
+#Iframes > p, iframe {
+    margin-left: 40px;
+}
+
+/* Embedded Content */
+#Embedded-Content > p {
+    margin-left: 40px;
+}
+
+/* Footer */
 footer {
     text-align: center;
     margin: 50px 0;
