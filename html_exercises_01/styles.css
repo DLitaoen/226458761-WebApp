@@ -10,19 +10,33 @@ h1 {
     margin-bottom: -10px;
 }
 
-/* Links */
+/* Nav */
 
-ul > li {
+nav {
+    color: azure;
+}
+
+nav > ul > li {
     list-style-type: none;
 }
 
-a:link, a:visited {
+nav > ul > li > a:link, a:visited {
     color: azure;
     text-decoration: none;
 }
 
-a:hover {
+nav > ul > li > a:hover {
     text-decoration: underline;
+}
+
+/* Links */
+
+#Links > ul > li > a:link, a:visited {
+    color: azure;
+}
+
+#Links > ul {
+    margin-bottom: 30px;
 }
 
 /* Images */
@@ -30,6 +44,10 @@ a:hover {
 img {
     height: 350px;
     width: auto;
+}
+
+figure {
+    margin-bottom: 30px;
 }
 
 /* Forms */
@@ -92,7 +110,7 @@ audio, video {
 video {
     height: 350px;
     width: auto;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 footer {
