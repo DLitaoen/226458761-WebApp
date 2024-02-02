@@ -21,22 +21,22 @@ document.getElementById('button-submit').onclick = function(event) {
 function formValidation() {
     var email = document.getElementById('email-input').value;
     var username = document.getElementById('username-input').value;
-    var message = document.getElementById('password-input').value;
+    var password = document.getElementById('password-input').value;
     var gender = document.querySelectorAll('input[name="gender-input"]:checked');
     var termsAndConditions = document.getElementById('terms-conditions-input');
 
-    if (!emailValidation(email)) {
-        alert('Please enter a valid email address.');
+    if (!email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/)) {
+        alert('Email must contain a valid email address');
         return false;
     }
 
-    if (!usernameValidation(username)) {
-        alert('Please enter a valid username.');
+    if (!username.match(/^[0-9A-Za-z]{6,15}$/)) {
+        alert('Username must only contain alphanumeric characters and be 6-15 characters long');
         return false;
     }
 
-    if (!passwordValidation(password)) {
-        alert('Please enter a valid password.');
+    if (!password.match(/^(?=.*?[0-9])(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[^0-9A-Za-z]).{8,32}$/)) {
+        alert('Password must have at least 1 number, 1 uppercase and lowercase letter, 1 special character, and 8 characters long');
         return false;
     }
 
@@ -51,16 +51,4 @@ function formValidation() {
     }
 
     return true;
-
-    function emailValidation(email) {
-        return email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/);
-    }
-
-    function usernameValidation(username) {
-        return username.match(/^[0-9A-Za-z]{6,15}$/);
-    }
-    
-    function passwordValidation(password) {
-    return password.match(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@.#$!%*?&^])[A-Za-z\d@.#$!%*?&]{8,20}$/);
-    }
 }
