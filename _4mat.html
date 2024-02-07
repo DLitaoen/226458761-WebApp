@@ -44,7 +44,7 @@
     <p>This <bdo dir="rtl">text</bdo> goes from right to left, while this <bdo dir="ltr">text</bdo> goes from left to right.</p>
     <br>
   <h3>< big ></h3>
-    <p><i>*Does not work in HTML5, uses CSS alternative</i></p>
+    <p><i>*Does not work in HTML5. Use CSS alternative</i></p>
     <p style="font-size: larger;"> This text should appear bigger than the other paragraph elements.</p>
     <br>
   <h3>< blockquote ></h3>
@@ -52,7 +52,7 @@
     <p style="margin-left: 40px;"> - Star Wars, 1977</p>
     <br>
   <h3>< center ></h3>
-    <p><i>*Does not work in HTML5, uses CSS alternative</i></p>
+    <p><i>*Does not work in HTML5. Use CSS alternative</i></p>
     <p style="text-align: center;">Cue the centered text</p>
     <br>
   <h3>< cite ></h3>
@@ -71,7 +71,7 @@
     <p>This tag emphasizes <em>text</em>, giving it an italicized appearance.</p> 
     <br></body>
   <h3>< font ></h3>
-    <p><i>*Does not work in HTML5, uses CSS alternative</i></p>
+    <p><i>*Does not work in HTML5. Use CSS alternative</i></p>
     <p style="font-family: Arial, Helvetica, sans-serif;">This sentence should be in a different font.</p> 
     <br>
   <h3>< i ></h3>
@@ -146,17 +146,53 @@
     <p>This tag gives text a <small>smaller appearance.</small></p> 
     <br>
   <h3>< strike ></h3>
-    <p><i>*Does not work in HTML5, use del and s tags as alternative</i></p>
+    <p><i>*Does not work in HTML5. Use del or s tags as alternative</i></p>
     <p>This tag also gives text a <del>strikethrough</del> <s>appearance</s>.</p> 
     <br>
   <h3>< strong ></h3>
     <p>This tag indicates that a text is <strong>important</strong>, giving it a <strong>bold</strong> appearance.</p> 
     <br>
   <h3>< sub ></h3>
-    <p>This tag indicates text a text is <sub>subscripted</sub>.</p> 
+    <p>This tag indicates that a text is <sub>subscripted</sub>.</p> 
     <br>
   <h3>< sup ></h3>
-    <p>This tag indicates text a text is <sup>superscripted</sup>.</p> 
+    <p>This tag indicates that a text is <sup>superscripted</sup>.</p> 
+    <br>
+  <h3>< template ></h3>
+    <p>This tag is a container that hides its contents when the web page is loaded:</p>
+    <template>
+      <div>
+        <p>Super secret text</p>
+      </div>
+    </template>
+    <br>
+    <p>Here is the code snippet for the content above:</p>
+    <code>
+      <pre>
+        &lt;template&gt;
+          &lt;div&gt;
+            &lt;p&gt;Super secret text&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;template&gt;
+      </pre>
+    </code>
+  <h3>< time ></h3>
+    <p>This tag indicates that a text is in a time format:</p>
+    <p>The current date is <time datetime="2024-02-07">February 07, 2024</time></p>
+    <br>
+  <h3>< tt ></h3>
+    <p><i>*Does not work in HTML5. Use code, kbd, samp, or CSS alternative</i></p>
+    <p style="font-family:'Lucida Console', monospace">This tag converts text to teletype text.</p> 
+    <br>
+  <h3>< u ></h3>
+    <p>This tag gives a text an <u>underlined appearance</u>. However, it is used to indicate that text is unarticulated or styled differently.</p> 
+    <br>
+  <h3>< var ></h3>
+    <p>This tag also gives a text an <var>italicized</var> appearance. However, it is used to indicate <var>variables</var> :</p>
+    <p><var>a<sup>2</sup></var> + <var>b<sup>2</sup></var> = <var>c<sup>2</sup></var></p> 
+    <br>
+  <h3>< wbr ></h3>
+    <p>This tag is used to indicate a possible word break for the browser when a word is waaaaaaaaaaaaaaaa<wbr>aaaaaaaaaaaaaaaay too looooooooooooooooooooooooooo<wbr>ooooooooooooooooooooooooong.</p> 
     <br>
 </body>
 </html>
