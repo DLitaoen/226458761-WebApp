@@ -16,7 +16,7 @@
       margin: 0 auto;
     }
 
-    code, kbd {
+    code, kbd, pre, samp {
       font-size: 17px;
     }
   </style>
@@ -83,29 +83,80 @@
   <h3>< kbd ></h3>
     <p>The shortcut for opening a folder in VS Code is <kbd>Ctrl</kbd> + <kbd>K </kbd> <kbd> Ctrl</kbd> + <kbd>O</kbd>.</p> 
     <br>
-  <h3>< font ></h3>
-    <p>This tag gives text a <del>strikethrough</del> appearance.</p> 
+  <h3>< mark ></h3>
+    <p>This tag highlights <mark>text</mark>, giving it a default <mark>yellow background</mark>.</p> 
     <br>
-  <h3>< font ></h3>
-    <p>This tag gives text a <del>strikethrough</del> appearance.</p> 
+  <h3>< meter ></h3>
+    <p>This tag can be used in many ways:</p>
+    <label for="meter_progress_bar">Project Progress Bar:</label>
+    <meter id="meter_progress_bar" value="0.75">75%</meter>
     <br>
-  <h3>< font ></h3>
-    <p>This tag gives text a <del>strikethrough</del> appearance.</p> 
+    <label for="meter_mobile_bar">Mobile Battery Bar:</label>
+    <meter id="meter_mobile_bar" value="40" min="0" max="100" low="41">40 out of 100</meter>
     <br>
-  <h3>< font ></h3>
-    <p>This tag gives text a <del>strikethrough</del> appearance.</p> 
+    <label for="meter_health_bar">Game Health Bar:</label>
+    <meter id="meter_health_bar" value="20" min="0" max="100" low="21" high="85" optimum="90">20 out of 100</meter>
     <br>
-  <h3>< font ></h3>
-    <p>This tag gives text a <del>strikethrough</del> appearance.</p> 
+  <h3>< pre ></h3>
+    <p><pre>
+      If a text is within the preformatted tag,
+      then it is displayed
+      in a    preformatted    manner.
+  </pre></p>
+  <h3>< progress ></h3>
+    <p>This tag works like the 'meter' tag. However, it focuses on showing task progress rather than functioning as a gauge (which the 'meter' tag does).</p>
+    <label for="progress_pitch_deck">Hult Prize Pitch Deck Progress:</label>
+    <progress id="progress_pitch_deck" value="65" max="100">65%</progress>
     <br>
-  <h3>< font ></h3>
-    <p>This tag gives text a <del>strikethrough</del> appearance.</p> 
+    <label for="progress_game">Hogwarts Legacy Quest Progress:</label>
+    <progress id="progress_game" value="40" max="100">40%</progress>
     <br>
-  <h3>< font ></h3>
-    <p>This tag gives text a <del>strikethrough</del> appearance.</p> 
+    <label for="progress_book_reading">Percy Jackson and the Olympians Book Reading Progress:</label>
+    <progress id="progress_book_reading" value="90" max="100">90%</progress>
     <br>
-  <h3>< font ></h3>
-    <p>This tag gives text a <del>strikethrough</del> appearance.</p> 
+  <h3>< q ></h3>
+    <p>This tag indicates that <q>a text is a short quotation.</q></p> 
+    <p>This adds opening and closing quotation marks to the enclosed text.</p>
+    <br>
+  <h3>< rp >, < rt >, < ruby ></h3>
+    <p>These tags are often used for East Asian typography:</p>
+    <ruby>
+      可愛い <rp>(</rp><rt>かわいい</rt><rp>)</rp>
+    </ruby>
+    <p>The text above shows the kanji and hiragana for "kawaii". Here is the code snippet for it:</p>
+    <code>
+      <pre>
+      &lt;ruby&gt;
+        可愛い &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;かわいい&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;
+      &lt;/ruby&gt;
+      </pre>
+    </code>
+  <h3>< s ></h3>
+    <p>This tag also gives text a strikethrough appearance. However, this tag is used to indicate that a text is already outdated or incorrect:</p>
+    <p>The current year is <s>2023</s> 2024.</p>
+    <br>
+  <h3>< samp ></h3>
+    <p>This tag indicates or shows text as a sample output from a computer program:</p>
+    <p><samp>"Hult": Unknown word.</samp></p>
+    <p><samp>"หนาว": Unknown word.</samp></p>
+    <p><samp>"Hult": Unknown word.</samp></p>
+    <p><samp>"kawaii": Unknown word.</samp></p>
+    <br>
+  <h3>< small ></h3>
+    <p>This tag gives text a <small>smaller appearance.</small></p> 
+    <br>
+  <h3>< strike ></h3>
+    <p><i>*Does not work in HTML5, use del and s tags as alternative</i></p>
+    <p>This tag also gives text a <del>strikethrough</del> <s>appearance</s>.</p> 
+    <br>
+  <h3>< strong ></h3>
+    <p>This tag indicates that a text is <strong>important</strong>, giving it a <strong>bold</strong> appearance.</p> 
+    <br>
+  <h3>< sub ></h3>
+    <p>This tag indicates text a text is <sub>subscripted</sub>.</p> 
+    <br>
+  <h3>< sup ></h3>
+    <p>This tag indicates text a text is <sup>superscripted</sup>.</p> 
     <br>
 </body>
 </html>
