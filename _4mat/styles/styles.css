@@ -1,0 +1,11 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: azure;
+    background-color: #212121;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  code, kbd, pre, samp {
+    font-size: 17px;
+  }
