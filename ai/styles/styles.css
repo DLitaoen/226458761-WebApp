@@ -1,0 +1,9 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 800px;
+    margin: 25px auto;
+}
+
+p {
+    text-indent: 35px;
+}
