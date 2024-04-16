@@ -3,139 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Landing Page</title>
     <link rel="stylesheet" href="styles.css">
-    <link
-    rel="stylesheet"
-    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-    crossorigin="anonymous"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,900;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <title>Product Landing Page</title>
 </head>
 <body>
-    <div id="page-wrapper">
     <header id="header">
-        <div class="logo">
-        <img
-            id="header-img"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-            alt="original trombones logo"
-        />
-        </div>
-
+        <a href="#top"><img id="header-img" src="./images/header-logo.png" alt="Marathon Athletics Club logo" height="60px"></a>
         <nav id="nav-bar">
-        <ul>
-            <li><a class="nav-link" href="#features">Features</a></li>
-            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-            <li><a class="nav-link" href="#pricing">Pricing</a></li>
-        </ul>
+            <ul>
+                <li><a href="#features-spacer" class="nav-link">Features</a></li>
+                <li><a href="#reviews-spacer" class="nav-link">Reviews</a></li>
+                <li><a href="#pricing" class="nav-link">Products</a></li>
+            </ul>
         </nav>
     </header>
-
-    <div class="container"></div>
-
-    <section id="hero">
-        <h2>Handcrafted, home-made masterpieces</h2>
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-        <input
-            name="email"
-            id="email"
-            type="email"
-            placeholder="Enter your email address"
-            required
-        />
-        <input id="submit" type="submit" value="Get Started" class="btn" />
-        </form>
-    </section>
-
-    <div class="container">
-        <section id="features">
-        <div class="grid">
-            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
-            <div class="desc">
-            <h2>Premium Materials</h2>
-            <p>
-                Our trombones use the shiniest brass which is sourced locally. This
-                will increase the longevity of your purchase.
-            </p>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-            <div class="desc">
-            <h2>Fast Shipping</h2>
-            <p>
-                We make sure you recieve your trombone as soon as we have finished
-                making it. We also provide free returns if you are not satisfied.
-            </p>
-            </div>
-        </div>
-        <div class="grid">
-            <div class="icon">
-            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-            </div>
-            <div class="desc">
-            <h2>Quality Assurance</h2>
-            <p>
-                For every purchase you make, we will ensure there are no damages or
-                faults and we will check and test the pitch of your instrument.
-            </p>
-            </div>
-        </div>
+    <main id="main-doc">
+        <section id="starter">
+            <h2 id="tagline">From Mountain Fresh to Jar Bliss: Baguio Strawberry Jam</h2>
+            <section id="subscribe">
+                <p>Join now for a 10% discount on your first purchase!</p>
+                <form action="https://www.freecodecamp.com/email-submit" id="form">
+                    <input id="email" name="email" type="email" placeholder="Enter your email">
+                    <input id="submit" type="submit" value="Join Now">
+                </form>
+            </section>
         </section>
-        <section id="how-it-works">
-        <iframe
-            id="video"
-            height="315"
-            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
+        <section id="features">
+            <p class="spacer" id="features-spacer">.</p>
+            <div class="features-sect">
+                <div class="icon">
+                    <i class="fa-solid fa-shoe-prints fa-3x"></i>
+                </div>
+                <div class="desc">
+                    <h2>Quality Strawberries</h2>
+                    <p> Made with the finest, freshest strawberries sourced directly from the heart of the Summer Capital of the Philippines - Baguio City.
+                    </p>
+                </div>
+            </div>
+            <div class="features-sect">
+                <div class="icon">
+                    <i class="fa-solid fa-ruler-combined fa-3x"></i>
+                </div>
+                <div class="desc">
+                    <h2>Tried and True Recipe</h2>
+                    <p>Our jams are perfectly portioned, ensuring consistent flavor and sweetness in every jar. 
+                    </p>
+                </div>
+            </div>
+            <div class="features-sect">
+                <div class="icon">
+                    <i class="fa-solid fa-star fa-3x"></i>
+                </div>
+                <div class="desc">
+                    <h2>Satisfaction Guaranteed</h2>
+                    <p>We're so confident you'll love our jam, we offer a satisfaction guarantee. If you're not happy, we're not happy!
+                    </p>
+                </div>
+            </div>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vcurXOMs9ug?si=awqhjkrkxvBZlrns" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <p class="spacer" id="reviews-spacer">.</p>
+        <h3>Reviews</h3>
+        <section id="reviews">
+            <div class="review-container">
+                <div class="review-body">
+                    <div class="user-logo">
+                        <i class="fa-solid fa-user fa-3x"></i>
+                    </div>
+                    <div class="user-name">Karl B.</div>
+                    <div class="user-location">Germany</div>
+                    <div class="user-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                   </div>
+                   <div class="user-review">This jam is incredible! The strawberries are so fresh and flavorful, it tastes like you just picked them yourself. Plus, the perfect amount of sweetness makes it the ideal topping for everything from toast to pancakes.  I won't buy any other brand now!</div>
+                </div>
+            </div>
+            <div class="review-container">
+                <div class="review-body">
+                    <div class="user-logo">
+                        <i class="fa-solid fa-user fa-3x"></i>
+                    </div>
+                    <div class="user-name">Liam J.</div>
+                    <div class="user-location">United States of America</div>
+                    <div class="user-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                   </div>
+                   <div class="user-review">Finally, a strawberry jam that gets it right! No more mystery ingredients or overly sweet gloop. This Baguio jam is all about the pure, delicious taste of real strawberries.  The precise portions are a lifesaver too - no more accidentally making a whole batch of overly sweet sandwiches! Ten out of ten!</div>
+                </div>
+            </div>
+            <div class="review-container">
+                <div class="review-body">
+                    <div class="user-logo">
+                        <i class="fa-solid fa-user fa-3x"></i>
+                    </div>
+                    <div class="user-name">Shiela P.</div>
+                    <div class="user-location">Philippines</div>
+                    <div class="user-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half"></i>
+                   </div>
+                   <div class="user-review">I was skeptical about ordering jam online, but I'm so glad I took the chance! This Baguio strawberry jam is the absolute best. You can tell the quality of the ingredients is top-notch.  The satisfaction guarantee gave me peace of mind, but honestly, it wasn't even necessary. This is my new go-to jam for sure!</div>
+                </div>
+            </div>
         </section>
         <section id="pricing">
-        <div class="product" id="tenor">
-            <div class="level">Tenor Trombone</div>
-            <h2>$600</h2>
-            <ol>
-            <li>Lorem ipsum.</li>
-            <li>Lorem ipsum.</li>
-            <li>Lorem ipsum dolor.</li>
-            <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-        </div>
-        <div class="product" id="bass">
-            <div class="level">Bass Trombone</div>
-            <h2>$900</h2>
-            <ol>
-            <li>Lorem ipsum.</li>
-            <li>Lorem ipsum.</li>
-            <li>Lorem ipsum dolor.</li>
-            <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-        </div>
-        <div class="product" id="valve">
-            <div class="level">Valve Trombone</div>
-            <h2>$1200</h2>
-            <ol>
-            <li>Plays similar to a Trumpet</li>
-            <li>Great for Jazz Bands</li>
-            <li>Lorem ipsum dolor.</li>
-            <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
-        </div>
+            <div class="product" id="tenor">
+                <div class="level">Solo</div>
+                <h2>₱100</h2>
+                <ol>
+                <p>Whether you're eating it alone or with others-- or maybe you just wanna try it-- this package is for you.</p>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="bass">
+                <div class="level">Family</div>
+                <h2>₱270</h2>
+                <ol>
+                <p>The family that eats strawberry jam together, stays together. Enjoy these sweet jams with the fam!</p>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
+            <div class="product" id="valve">
+                <div class="level">It's Giving</div>
+                <h2>₱700</h2>
+                <ol>
+                <p>It's giving... strawberry jams! Buy 7, get 1 free! Share the blessings of these authentic Baguio strawberry jams.</p>
+                </ol>
+                <button class="btn">Select</button>
+            </div>
         </section>
-        <footer>
-        <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-        <span>Copyright 2016, Original Trombones</span>
-        </footer>
-    </div>
-    </div>
+    </main>
+    <footer>
+        <p>Disclaimer: This is a website made in partial fulfillment of an academic course.</p>
+    </footer>
 </body>
 </html>
