@@ -1,0 +1,26 @@
+.chessboard {
+    display: flex;
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    max-height: 800px;
+    max-width: 800px;
+}
+
+.chessboard > div {
+    flex: 12.5%;
+    height: 100px;
+    width: 100px;
+}
+
+.chessboard > div:nth-of-type(even) {
+    background-color: skyblue;
+}
+
+.chessboard > div:nth-of-type(odd) {
+    background-color: rgb(94, 144, 163);
+}
+
+.chessboard>div:nth-child(9n+1){
+    order: 1;
+}
